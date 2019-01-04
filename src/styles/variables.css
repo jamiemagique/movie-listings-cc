@@ -1,0 +1,63 @@
+:root {
+  --baseline: 8px;
+
+  /*
+  * General spacing
+  */
+  --tiny-spacing: var(--baseline);                  /* 8px  - tiny */
+  --x-small-spacing: calc(var(--baseline) * 2);     /* 16px - small */
+  --small-spacing: calc(var(--baseline) * 3);       /* 24px - small */
+  --medium-spacing: calc(var(--baseline) * 4);      /* 32px - medium */
+  --large-spacing: calc(var(--baseline) * 6);       /* 48px - large */
+
+  /*
+  * Layout sizes
+  */
+  --l-width-max: 1440px;
+  --l-site-gutter-size: calc(var(--baseline) * 2);  /* 24px */
+
+  /*
+  * Grid gutter
+  */
+  --gutter-size: calc(var(--baseline) * 3);         /* 24px */
+  --large-gutter-size: calc(var(--baseline) * 4);   /* 32px */
+
+  /**
+   * Fonts
+   */
+  --regular-font: 'Rubik', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-light: 300;
+  --font-weight-bold: 700;
+
+  /**
+   * Font sizes
+   */
+  --tiny-font-size: 12px;
+  --x-small-font-size: 14px;
+  --small-font-size: 16px;
+  --medium-font-size: 18px;
+  --large-font-size: 22px;
+
+  /**
+   * Colors
+   */
+  --c-blue: #4886ff;
+
+  /* Greys, percentages on black. */
+  --c-grey-60: #666;
+  --c-grey-40: #9b9b9b;
+
+  --c-text: #000;
+  --c-muted: var(--c-grey-60);
+
+  /**
+   * Borders
+   */
+  --border-radius: 8px;
+
+  /**
+   * Box shadows
+   */
+  --box-shadow: 0 11px 22px 0 rgba(0, 0, 0, 0.1);
+}

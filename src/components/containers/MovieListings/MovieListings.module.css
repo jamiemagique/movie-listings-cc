@@ -1,0 +1,16 @@
+.layout {
+  display: grid;
+  grid-gap: var(--large-gutter-size);
+}
+
+@media (min-width: 569px) {
+  .layout {
+    grid-template-columns: 230px 1fr;
+  }
+}
+
+.formLayout {
+  display: grid;
+  grid-gap: var(--gutter-size);
+  grid-template-rows: max-content;
+}

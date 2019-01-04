@@ -1,0 +1,18 @@
+.header {
+  font-size: var(--large-font-size);
+  margin: var(--x-small-spacing) 0 var(--gutter-size);
+  padding: 0;
+  text-align: center;
+}
+
+.footer {
+  display: grid;
+  font-size: var(--x-small-font-size);
+  grid-gap: var(--x-small-spacing);
+  justify-content: center;
+  padding: var(--small-spacing) 0;
+}
+
+.footerLogo {
+  max-height: 4rem;
+}

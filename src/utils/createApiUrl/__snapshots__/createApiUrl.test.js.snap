@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`creates an api url correctly 1`] = `"api.example.com/configuration?api_key=<api_key>"`;

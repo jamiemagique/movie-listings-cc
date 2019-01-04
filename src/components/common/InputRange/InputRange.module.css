@@ -1,0 +1,69 @@
+/**
+ * Custom styling for `react-input-range`.
+ */
+.inputRange {
+  display: grid;
+  grid-template-areas:  "track track"
+                        "min max";
+  grid-template-rows: repeat(2, minmax(min-content, auto));
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+.track {
+  background-color: var(--c-blue);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  display: block;
+  grid-area: track;
+  height: 4px;
+  margin: 2rem 0 0.5rem;
+  position: relative;
+  transition: left 0.3s ease-out, width 0.3s ease-out;
+}
+
+.activeTrack {
+  background-color: var(--c-grey-40);
+  height: 100%;
+}
+
+.slider {
+  background-color: var(--c-blue);
+  border: 1px solid var(--c-blue);
+  border-radius: 100%;
+  cursor: pointer;
+  display: block;
+  height: 1rem;
+  outline: none;
+  margin-top: -2px; /* minus half the track's height. */
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  width: 1rem;
+}
+
+.sliderContainer {
+  transition: left 0.3s ease-out;
+}
+
+.labelContainer {
+  color: var(--c-muted);
+  font-size: var(--x-small-font-size);
+  white-space: nowrap;
+}
+
+.sliderContainer .labelContainer {
+  display: block;
+  text-align: center;
+  transform: translate(-50%, -160%);
+}
+
+.minLabel {
+  grid-area: min;
+}
+
+.maxLabel {
+  grid-area: max;
+  justify-self: end;
+}
